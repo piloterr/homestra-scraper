@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://homestra.com/property/charming-4-bedroom-stone-house-with-historic-towers-in-idyllic-french-village/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -242,7 +242,7 @@ response = requests.get(
     params={
         "query": "https://homestra.com/list/houses-for-sale/?maximum-price=900000&minimum-price=75000&page=1",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
